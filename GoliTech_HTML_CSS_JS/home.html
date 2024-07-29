@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoLitech</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section id = "header">
+        <a href=""><img src="./Asset/logo1.png" class="logo"></a>
+
+        <div>
+            <ul id = "navbar">
+                <li><a class = "active" href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <a href="#" id = "times"><i class = "fa fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id = "mobile">
+            <i id = "bar" class = "fa fa-bars"></i>
+        </div>
+
+    </section>
+
+    
+    <!-- Banner HomePage -->
+    <section id = "mainbanner">
+
+        
+            <h4>Welcome to GoLi Tech</h4>
+        
+        <h1>Go Limitless for Your Future</h1>
+        <p>
+            Providing the best and latest gaming gears
+        </p>
+        <br>
+        <br>
+        <a href="products.html"><button>Explore more</button></a>
+       
+        
+        
+    </section>
+
+    <!-- Category -->
+    <h1 id = "catTitle"><br>Product Category</h1>
+    
+    <section id = "category">
+
+    
+    <div class = "container">
+        <div class = "horizontal-scroll">
+            <button class = "scroll" id = "scroll-left" onclick="scrollHorizontal(1)"><i class = "fa fa-chevron-left"></i></button>
+            
+            <button class = "scroll" id = "scroll-right" onclick="scrollHorizontal(-1)"><i class = "fa fa-chevron-right"></i></button>
+    
+            <div class = "box">
+                <div class = "pict">
+                    <img src="./Asset/lp2.png">
+                    <h3>Laptop</h3>
+                </div>
+        
+                <div class = "pict">
+                    <img src="./Asset/ms1.png">
+                    <h3>Mouse</h3>
+                </div>
+        
+                <div class = "pict">
+                    <img src="./Asset/ch1.png">
+                    <h3>Chair</h3>
+                </div>
+            
+                <div class = "pict">
+                    <img src="./Asset/hp3.png">
+                    <h3>Headphone</h3>
+                </div>
+        
+                <div class = "pict">
+                    <img src="./Asset/kb1.png">
+                    <h3>Keyboard</h3>
+                </div>
+
+                <div class = "pict">
+                    <img src="./Asset/usb1.png">
+                    <h3>Accessories</h3>
+                </div>
+        
+                
+            </div>
+            
+        </div>
+    </div>
+
+    </section>
+
+
+    <!-- Membership Banner -->
+    <section id = "member">
+        <h2>Membership Program</h2>
+        <h3>Discount Up to 50%</h3>
+        <br>
+        <p>
+            Get special price with our <strong>GoLi Membership.</strong> 
+        </p>
+        <p>
+            Limited offer! <a href="membership.html"><button class = "active">Read more</button></a>
+        </p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class = "col">
+            <img class = "logofooter" src="./Asset/logo2.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Jl. Sudirman Kav 89, Jakarta Selatan</p>
+            <p><strong>Phone: </strong>021 5463231</p>
+            <p><strong>Hours: </strong>08.00 - 16.00 WIB</p>
+        
+
+            <div class = "sosmed">
+                <h4>Follow Us</h4>
+                <div class = "icon">
+                    <i class = "fab fa-facebook"></i>
+                    <i class = "fab fa-instagram"></i>
+                    <i class = "fab fa-twitter"></i>
+                    <i class = "fab fa-tiktok"></i>
+                    <i class = "fab fa-whatsapp"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class = "col">
+            <h4>About</h4>
+            <a href="aboutus.html">About Us</a>
+            <a href="">Privacy and Policy</a>
+            <a href="">Terms and Conditions</a>
+            <a href="">Contact Us</a>
+        </div>
+
+        <div class = "col">
+            <h4>Account</h4>
+            <a href="">Sign In</a>
+            <a href="">Sign Up</a>
+            <a href="">Order List</a>
+            <a href="">Help</a>
+        </div>
+
+        <div class = "install">
+            <h4>Find App</h4>
+            <div class = "row">
+                <img class = "gp" src="./Asset/googleplay.png" alt="">
+                <img class = "ap" src="./Asset/appstore.png" alt="">
+            </div>
+        </div>
+
+        <div class = "payment">
+            <h4>Payment</h4>
+            <div class = "row">
+                <img class = "mc" src="./Asset/mastercard.png">
+                <img class = "pp" src="./Asset/paypal.png">
+            </div>
+
+        </div>
+
+        <div class = "copyright">
+            <p>GoLi Tech Company Right and Reserved © 2023.</p>
+        </div>
+
+    </footer>
+    
+    <script src="home.js"></script>
+</body>
+</html>

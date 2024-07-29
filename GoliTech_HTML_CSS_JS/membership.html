@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoLitech</title>
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section id = "header">
+        <a href="home.html"><img src="./Asset/logo1.png" class="logo"></a>
+        <div>
+            <ul id = "navbar">
+                <li><a  href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a class = "active" href="membership.html">Membership</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <a href="#" id = "times"><i class = "fa fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id = "mobile">
+            <i id = "bar" class = "fa fa-bars"></i>
+        </div>
+
+    </section>
+
+    <!-- Membership Form -->
+    <section id = "member">
+        <div id = "regist">
+            <h2>Registration Form</h2>
+                
+            <form id = "form-container"action="">
+                
+                <div class = "box">
+                    <input type="text" placeholder="Name" id = "name">
+                </div>
+
+                <div class = "box">
+                    <input type="text" placeholder="Email" id = "email">
+                </div>
+
+                <div class = "box">
+                    <input type="text" placeholder="Phone" id = "phone">
+                </div>
+
+                <div class = "box">
+                    <input type="text" placeholder="Address" id = "addr">
+                </div>
+
+                <div class = "box">
+                    <div class=" select">
+                        <select id="gender" required>
+                            <option value="" disabled selected hidden>Choose Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Not Say">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class = "box">
+                    <div class=" select">
+                        <select id="country" required>
+                            <option value="" disabled selected hidden>Select Country</option>
+                            <option value="Germany">Germany</option>
+                            <option value="USA">USA</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Others">Others</option>
+                        </select>
+                        <!-- <div class = "drop">
+                            <div class = "arrow">></div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class = "tnc">
+                    <input type="checkbox" id = "tnc">
+                    <div class = "tnc">Agree Terms and Conditions</div>
+                </div>
+
+                <div class = "submit">
+                    <button id = "submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class = "col">
+            <img class = "logofooter" src="./Asset/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Jl. Sudirman Kav 89, Jakarta Selatan</p>
+            <p><strong>Phone: </strong>021 5463231</p>
+            <p><strong>Hours: </strong>08.00 - 16.00 WIB</p>
+        
+
+            <div class = "sosmed">
+                <h4>Follow Us</h4>
+                <div class = "icon">
+                    <i class = "fab fa-facebook"></i>
+                    <i class = "fab fa-instagram"></i>
+                    <i class = "fab fa-twitter"></i>
+                    <i class = "fab fa-tiktok"></i>
+                    <i class = "fab fa-whatsapp"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class = "col">
+            <h4>About</h4>
+            <a href="aboutus.html">About Us</a>
+            <a href="">Privacy and Policy</a>
+            <a href="">Terms and Conditions</a>
+            <a href="">Contact Us</a>
+        </div>
+
+        <div class = "col">
+            <h4>Account</h4>
+            <a href="">Sign In</a>
+            <a href="">Sign Up</a>
+            <a href="">Order List</a>
+            <a href="">Help</a>
+        </div>
+
+        <div class = "install">
+            <h4>Find App</h4>
+            <div class = "row">
+                <img class = "gp" src="./Asset/googleplay.png" alt="">
+                <img class = "ap" src="./Asset/appstore.png" alt="">
+            </div>
+        </div>
+
+        <div class = "payment">
+            <h4>Payment</h4>
+            <div class = "row">
+                <img class = "mc" src="./Asset/mastercard.png">
+                <img class = "pp" src="./Asset/paypal.png">
+            </div>
+
+        </div>
+
+        <div class = "copyright">
+            <p>GoLi Tech Company Right and Reserved © 2023.</p>
+        </div>
+
+    </footer>
+    
+    <script src="membership.js"></script>
+</body>
+
+</html>

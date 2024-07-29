@@ -1,0 +1,43 @@
+from scipy.interpolate import interp1d
+import matplotlib.pyplot as plt
+import numpy as np
+
+# DATA
+x =[1981, 1983, 1985, 1987, 1989, 1991, 1993, 1995, 1997, 1999]
+y = [14.1999, 14.2411, 14.0342, 14.2696, 14.197, 14.3055, 14.1853, 14.3577, 14.4187, 14.3438]
+
+x = np.array(x)
+y = np.array(y)
+
+# EVEN YEARS
+even_years = [1982, 1984, 1986, 1988, 1990, 1992, 1994, 1996, 1998]
+even_years = np.array(even_years)
+
+# INTERPOLATION
+f = interp1d(x, y, "linear")
+f1 = interp1d(x, y, "quadratic")
+f2 = interp1d(x, y, "cubic")
+
+# y
+y_lin = f(even_years)
+y_quad = f1(even_years)
+y_cub = f2(even_years)
+
+# LSR
+A = np.vstack((x, np.ones(len(x)))).T
+y = y[:, np.newaxis]
+
+psudo = np.linalg.pinv(A)
+alpha = np.dot(psudo, y)
+
+# Graph
+plt.plot(x, y, '-b')
+plt.plot(even_years, y_lin, '-r')
+plt.plot(even_years, y_quad, '-g')
+plt.plot(even_years, y_cub, '-c')
+plt.plot(even_years, alpha[0]*even_years + alpha[1], 'k-')
+
+plt.xlabel('Years')
+plt.ylabel('Temperature')
+plt.legend(['Odd Years','Linear Interpolation', 'Quadratic Interpolation', 
+            'Cubic Interpolation', 'Least Square Regression'], fontsize = 7)
